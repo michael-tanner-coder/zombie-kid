@@ -81,6 +81,10 @@ public class GroupController : MonoBehaviour
         otherGroup.Formation.SetAmount(theirAmount);
         _group.Formation.SetAmount(ourAmount);
 
+        int newRingAmount = (int) Mathf.Floor((float) _group.Formation.Amount / 10f);
+        newRingAmount = Mathf.Clamp(newRingAmount, 1, 10);
+        _group.Formation.SetRings(newRingAmount);
+
         if (ourAmount <= 0)
         {
             Destroy(gameObject);

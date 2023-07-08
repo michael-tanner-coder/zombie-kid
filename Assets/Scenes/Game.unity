@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: _opposingGroups
       value: 
       objectReference: {fileID: 11400000, guid: ff11018c6958365408a2d16f7d94eacb, type: 2}
+    - target: {fileID: 4803720865090252251, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: _timeUntilConsumption
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5636635021048364539, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_AngularDrag
       value: 0
@@ -7997,7 +8001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc7d5337ad793b41a7cd094e9a346ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _focalPoint: {fileID: 0}
+  _focalPoint: {fileID: 1758921697}
   _trackingSpeed: 0.08
   _offsetX: 0
   _offsetY: 2.5
