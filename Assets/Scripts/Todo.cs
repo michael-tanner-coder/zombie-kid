@@ -3,7 +3,6 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: test top-down player movement
     // TODO: create a zombie object to follow the player
     // TODO: create a group prefab of leaders and followers
     // TODO: set up 2d navmesh pathfinding for group prefabs
