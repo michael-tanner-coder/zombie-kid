@@ -25,6 +25,5 @@ public class GameStateManager : IService
     public void SetState(GameState newState)
     {
         _state = newState;
-        OnStateChanged(newState);
     }
 }

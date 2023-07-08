@@ -6,17 +6,11 @@ using UnityEngine.AI;
 public class FollowerMovement : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    private NavMeshAgent _agent;
+    [SerializeField] private float _followSpeed;
 
-    void Start()
-    {
-        _agent = GetComponent<NavMeshAgent>();
-        _agent.updateRotation = false;
-        _agent.updateUpAxis = false;
-    }
 
     void Update()
     {
-        _agent.SetDestination(_target.position);
+        transform.position = Vector3.MoveTowards(transform.position, _target.position, _followSpeed * Time.deltaTime);
     }
 }

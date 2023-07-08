@@ -41,7 +41,6 @@ public class PlayerAnimator : MonoBehaviour
         Vector2 Input = _inputHandler.Move().ReadValue<Vector2>();
 
         // Flip the sprite
-        UnityEngine.Debug.Log("Input: " + Input.x + ", " + Input.y);
         _anim.SetFloat("Horizontal", Input.x);
         _anim.SetFloat("Vertical", Input.y);
         _anim.SetFloat("Speed", Mathf.Abs(Input.x) + Mathf.Abs(Input.y));
