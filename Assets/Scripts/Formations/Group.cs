@@ -4,13 +4,13 @@ using System.Linq;
 using UnityEngine;
 
 public class Group : MonoBehaviour {
-    private FormationBase _formation;
+    private RadialFormation _formation;
 
-    public FormationBase Formation 
+    public RadialFormation Formation 
     {
         get 
         {
-            if (_formation == null) _formation = GetComponent<FormationBase>();
+            if (_formation == null) _formation = GetComponent<RadialFormation>();
             return _formation;
         }
         set => _formation = value;

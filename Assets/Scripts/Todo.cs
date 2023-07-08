@@ -3,9 +3,7 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: assign number strength to groups
     // TODO: create enemy groups (leader determines behavior)
-    // TODO: use number strength to determine outcome of group collision (bigger group reduces smaller group gradually)
     // TODO: create a detection radius for enemy groups
     // TODO: code flee behavior
     // TODO: code chase behavior

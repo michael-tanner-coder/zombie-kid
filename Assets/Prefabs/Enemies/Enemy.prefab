@@ -97,7 +97,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8724373994609232352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -162,11 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33d8eb2a7bca6b4b8e49db45a997602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parameters: {fileID: 11400000, guid: 1a74e0697b8ac0847992269632e944e5, type: 2}
-  _health: {fileID: 0}
-  _movement: {fileID: 0}
+  _attributes: {fileID: 0}
   _renderer: {fileID: 8724373994609232367}
-  _hurtBox: {fileID: 0}
   _animator: {fileID: 0}
   _vfxSpawner: {fileID: 0}
   _collidableObjects: {fileID: 11400000, guid: 5867dc72610f0ff43b7e2f0286ca1f31, type: 2}
