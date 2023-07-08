@@ -3,9 +3,6 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: create a zombie object to follow the player
-    // TODO: create a group prefab of leaders and followers
-    // TODO: set up 2d navmesh pathfinding for group prefabs
     // TODO: assign number strength to groups
     // TODO: create enemy groups (leader determines behavior)
     // TODO: use number strength to determine outcome of group collision (bigger group reduces smaller group gradually)
