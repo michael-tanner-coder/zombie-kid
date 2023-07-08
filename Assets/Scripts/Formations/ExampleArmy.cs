@@ -21,12 +21,7 @@ public class ExampleArmy : MonoBehaviour {
 
     private readonly List<GameObject> _spawnedUnits = new List<GameObject>();
     private List<Vector3> _points = new List<Vector3>();
-    private Transform _parent;
-
-    private void Awake() 
-    {
-        _parent = new GameObject("Unit Parent").transform;
-    }
+    [SerializeField] private Transform _leader;
 
     private void Update() 
     {
@@ -47,11 +42,9 @@ public class ExampleArmy : MonoBehaviour {
             Kill(_spawnedUnits.Count - _points.Count);
         }
 
-        Debug.Log(transform.position);
-
         for (var i = 0; i < _spawnedUnits.Count; i++) 
         {
-            _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, transform.position + _points[i], _unitSpeed * Time.deltaTime);
+            _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, _leader.position + _points[i], _unitSpeed * Time.deltaTime);
         }
     }
 
