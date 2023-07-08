@@ -193,8 +193,6 @@ public class EnemySpawnController : MonoBehaviour
             {
                 spawnedObject.GetComponent<Enemy>().SetAttributes(enemyType);
                 spawnedObject.GetComponent<MoveInOwnDirection>()?.SetDirection(new Vector2(spawnPointData.XDirection, spawnPointData.YDirection));
-                MoveTowardClosest enemyMovement = spawnedObject.GetComponent<MoveTowardClosest>();
-                enemyMovement?.SetSpeed((enemyMovement.Speed * speedModifier) - spawnedEnemyCount * 0.2f);
             }
 
             // track spawned object in a list

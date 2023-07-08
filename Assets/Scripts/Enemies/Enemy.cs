@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyAttributes _parameters;
     public EnemyAttributes EnemyAttributes => _parameters;
     [SerializeField] private EnemyHealth _health;
-    [SerializeField] private MoveTowardClosest _movement;
+    [SerializeField] private FollowerMovement _movement;
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private CustomCollider _hurtBox;
     [SerializeField] private Animator _animator;
@@ -26,7 +26,6 @@ public class Enemy : MonoBehaviour
         // get necesssary components
         _renderer = gameObject.GetComponent<SpriteRenderer>();
         _health = gameObject.GetComponent<EnemyHealth>();
-        _movement = gameObject.GetComponent<MoveTowardClosest>();
         _hurtBox = gameObject.GetComponent<CustomCollider>();
         _animator = gameObject.GetComponent<Animator>();
 
@@ -56,7 +55,6 @@ public class Enemy : MonoBehaviour
         _parameters = parameters;
         _renderer.sprite = _parameters.AttackAnimation;
         _health.SetHealth(_parameters.Health.CurrentValue);
-        _movement.SetSpeed(parameters.MoveSpeed.CurrentValue);
         _animator.runtimeAnimatorController = parameters.Animation;
     }
 
