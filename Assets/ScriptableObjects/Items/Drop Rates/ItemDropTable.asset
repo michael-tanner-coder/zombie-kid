@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835aee1d6e6945740865e3cf605c934b, type: 3}
+  m_Name: ItemDropTable
+  m_EditorClassIdentifier: 
+  _probabilityTotalWeight: 65
+  Lookup:
+    m_keys:
+    - {fileID: 11400000, guid: 0b382f09957c99b4b8fda2152943677e, type: 2}
+    - {fileID: 11400000, guid: ec5b414ca9bdb764e84759c9da614e8d, type: 2}
+    - {fileID: 11400000, guid: 6abfd9a3ffe889242a7f6b289a669e9b, type: 2}
+    - {fileID: 11400000, guid: 3ce02786aa29cc94f9de8cc44de870f2, type: 2}
+    m_values:
+    - probabilityWeight: 25
+      probabilityFrom: 0
+      probabilityTo: 25
+    - probabilityWeight: 25
+      probabilityFrom: 25
+      probabilityTo: 50
+    - probabilityWeight: 10
+      probabilityFrom: 50
+      probabilityTo: 60
+    - probabilityWeight: 5
+      probabilityFrom: 60
+      probabilityTo: 65

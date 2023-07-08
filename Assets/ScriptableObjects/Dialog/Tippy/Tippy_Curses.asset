@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: Tippy_Curses
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: "The deeper you dive underground, you\u2019ll probably find these weird
+      cursed objects."
+    _image: {fileID: 0}
+  - _content: 'The old shop dude tells me the things have all kinds of weird side
+      effects. '
+    _image: {fileID: 0}
+  - _content: 'They can make things good for you, but also, like, bad. Real bad. 
+      You can only keep a few with you until the curses become too much. '
+    _image: {fileID: 0}
+  - _content: "And once you grab one, it straight up won\u2019t leave you."
+    _image: {fileID: 0}
+  - _content: ' But I heard there are people in the Depths who can remove, exorcism
+      style. Just costs some Gs though.'
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}

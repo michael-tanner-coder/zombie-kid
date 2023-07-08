@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0655fffd855c1048ad98b18142b0f16, type: 3}
+  m_Name: SplitSkull
+  m_EditorClassIdentifier: 
+  _moveSpeed:
+    _baseValue: 2
+    _currentValue: 2
+    _modifiers: []
+  _rotationFrequency:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _swerveAmplitude:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _swerveFrequency:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _health:
+    _baseValue: 2
+    _currentValue: 2
+    _modifiers: []
+  _baseMoveSpeed: 2
+  _baseRotationFrequency: 0
+  _baseSwerveAmplitude: 0
+  _baseSwerveFrequency: 0
+  _baseHealth: 2
+  _spawnableEnemies:
+  - {fileID: 11400000, guid: e6d40ef6de8b6234abc014349a25dd97, type: 2}
+  - {fileID: 11400000, guid: c47b6a46518eb3548957ced05088ffa9, type: 2}
+  _attackAnimation: {fileID: 21300000, guid: 729e3b3f40a19834c847776c1a5b88f7, type: 3}
+  _deathAnimation: {fileID: 0}
+  _animation: {fileID: 9100000, guid: 801b5d6b0ef153647b6a4c2557d5b717, type: 2}
+  _spawnCry: {fileID: 0}
+  _deathCry: {fileID: 0}

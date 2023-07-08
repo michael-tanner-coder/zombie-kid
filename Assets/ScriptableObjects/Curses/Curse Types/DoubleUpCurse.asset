@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89eed4e6dc3cfa4d98f0e6c77c3ddce, type: 3}
+  m_Name: DoubleUpCurse
+  m_EditorClassIdentifier: 
+  _name: Double-Up
+  _description: "The curse so nice, you\u2019ll always shoot twice / +1 SHOT COUNT"
+  _modifiers:
+  - _operator: 0
+    _value: 1
+    _targetAttribute: 3
+  _image: {fileID: 21300000, guid: e0296ac130c846c4bb7d1171f868769d, type: 3}
+  _spawnSound: {fileID: 0}
+  _collectSound: {fileID: 0}

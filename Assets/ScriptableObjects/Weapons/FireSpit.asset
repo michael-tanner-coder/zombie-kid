@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ea26e92beb1c644b5efbabf99569dd, type: 3}
+  m_Name: FireSpit
+  m_EditorClassIdentifier: 
+  _name: Fire Spit
+  _description: Fire is a time-tested way to get rid of anything you hate
+  _baseFiringRate: 8
+  _baseDamage: 1
+  _baseAmmoUsage: 0
+  _baseBulletCount: 1
+  _effect: {fileID: 0}
+  _storeIcon: {fileID: 21300000, guid: fb1292b76d35e8940aad2d69da39c715, type: 3}
+  _equipIcon: {fileID: 21300000, guid: fb1292b76d35e8940aad2d69da39c715, type: 3}
+  _firingSound: {fileID: 0}

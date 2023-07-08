@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0655fffd855c1048ad98b18142b0f16, type: 3}
+  m_Name: SplitSkullTop
+  m_EditorClassIdentifier: 
+  _moveSpeed:
+    _baseValue: 2.5
+    _currentValue: 2.5
+    _modifiers: []
+  _rotationFrequency:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _swerveAmplitude:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _swerveFrequency:
+    _baseValue: 0
+    _currentValue: 0
+    _modifiers: []
+  _health:
+    _baseValue: 1
+    _currentValue: 1
+    _modifiers: []
+  _baseMoveSpeed: 2.5
+  _baseRotationFrequency: 0
+  _baseSwerveAmplitude: 0
+  _baseSwerveFrequency: 0
+  _baseHealth: 1
+  _spawnableEnemies: []
+  _attackAnimation: {fileID: 21300000, guid: 716988ddc5fdf0744b83dcdd4376ad51, type: 3}
+  _deathAnimation: {fileID: 0}
+  _spawnCry: {fileID: 0}
+  _deathCry: {fileID: 0}

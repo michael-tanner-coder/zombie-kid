@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1977891031896136432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977891031896136434}
+  - component: {fileID: 1977891031896136435}
+  m_Layer: 0
+  m_Name: EnemySpawnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1977891031896136434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891031896136432}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13, y: 1.0792065, z: -0.14776634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1977891031896136435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891031896136432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e8695a9aeb5be49852a698ae463a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _state: 0
+  _loopWaves: 0
+  _waves:
+  - {fileID: 11400000, guid: 8914cb05061615245a8a1470683a7ae6, type: 2}
+  - {fileID: 11400000, guid: 9cd38f74de165ed469039cebda9d2caa, type: 2}
+  - {fileID: 11400000, guid: 8914cb05061615245a8a1470683a7ae6, type: 2}
+  - {fileID: 11400000, guid: 9cd38f74de165ed469039cebda9d2caa, type: 2}
+  _waveTimer: 0
+  _restTimer: 0
+  _waveIndex: 0
+  _spawnPrefab: {fileID: 8724373994609232352, guid: aafac9a21def72041af4dfce54d2c58f, type: 3}
+  _spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _spawnedObjects: {fileID: 11400000, guid: ff11018c6958365408a2d16f7d94eacb, type: 2}
+  _waveEvent: {fileID: 11400000, guid: 1348622ef20ab584c8082d2fa0229ca5, type: 2}
+  _restEvent: {fileID: 11400000, guid: 697f39de4994da945808111ab4682867, type: 2}
+  _endEvent: {fileID: 11400000, guid: 22d214e29d7860f4abc40e0dd150775f, type: 2}

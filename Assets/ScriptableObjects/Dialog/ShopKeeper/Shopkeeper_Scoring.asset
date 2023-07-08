@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: Shopkeeper_Scoring
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: "Now I take it you been hittin\u2019 those monsters down there pretty
+      hard? "
+    _image: {fileID: 0}
+  - _content: "Y\u2019might have seen on them graves eppytaffs that everybody who
+      dies gets a score."
+    _image: {fileID: 0}
+  - _content: 'Bit of friendly competition in the afterlife, they say. '
+    _image: {fileID: 0}
+  - _content: 'The more monsters ya beat, the more points you get. '
+    _image: {fileID: 0}
+  - _content: "I\u2019ll tell you what, stranger: I\u2019m a man who respects a competitive
+      spirit."
+    _image: {fileID: 0}
+  - _content: "You rack up points every time you dive into the depths, I\u2019ll
+      give you some extra cash. "
+    _image: {fileID: 0}
+  - _content: 'More points, more cash, more firepower. Easy as that, stranger. '
+    _image: {fileID: 0}
+  - _content: Anyway, whatcha need?
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}

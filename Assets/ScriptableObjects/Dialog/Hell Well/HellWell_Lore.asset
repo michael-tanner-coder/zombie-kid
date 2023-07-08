@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: HellWell_Lore
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: "Hey, you\u2019ve been putting your money where your mouth used to
+      be. And I appreciate that hehe. "
+    _image: {fileID: 0}
+  - _content: "You know what? Because you\u2019ve been such a solid coin tosser that
+      I\u2019m gonna let you in on a little secret. "
+    _image: {fileID: 0}
+  - _content: Heard your friend, that Tippy guy, has been wondering what this place
+      was before the gates and graves went up. Truth is, it was a big mining spot.
+    _image: {fileID: 0}
+  - _content: Tons of miners came by, from all over, just for a chance of striking
+      gold. But nobody managed to get it.
+    _image: {fileID: 0}
+  - _content: Sound familiar?
+    _image: {fileID: 0}
+  - _content: "Hehe it should. Basically, it\u2019s the same crazy stuff you\u2019re
+      doing, but with more pickaxes and black lung."
+    _image: {fileID: 0}
+  - _content: "Question is: why didn\u2019t they find the gold? "
+    _image: {fileID: 0}
+  - _content: "They clearly dug deep. And in the right place by the looks of it.
+      That\u2019s why you\u2019re even able to get down in there at all. ."
+    _image: {fileID: 0}
+  - _content: "Truth is: I know why they didn\u2019t find the gold. And I know what
+      they really found."
+    _image: {fileID: 0}
+  - _content: "\u2026"
+    _image: {fileID: 0}
+  - _content: "But it\u2019ll take a lot more coin-tossing before I trust you with
+      that info hehe."
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}

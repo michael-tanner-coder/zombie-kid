@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454138e1cdd97ad479f2a77fd5b87ef6, type: 3}
+  m_Name: AllCurses
+  m_EditorClassIdentifier: 
+  _elements:
+  - {fileID: 11400000, guid: f5bd9ad7fbad3e649b8223c98e9be32e, type: 2}
+  - {fileID: 11400000, guid: 1f15ffd5ba0a664419150016c75569f5, type: 2}
+  - {fileID: 11400000, guid: d255adf32f609e741910f54b08e7f5dd, type: 2}
+  - {fileID: 11400000, guid: 45d8e07f347c40e4188866b1e7a94e41, type: 2}
+  - {fileID: 11400000, guid: 34a60dc24894b0c4196a1ad33b0b205c, type: 2}
+  _maxLength: 0

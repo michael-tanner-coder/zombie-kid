@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: Tippy_Intro
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: "Hey. Skull dude. What\u2019s up? "
+    _image: {fileID: 0}
+  - _content: "You out here for the treasure too? That\u2019s crazy."
+    _image: {fileID: 0}
+  - _content: "Listen, I can see that you\u2019ve, like, already died (which I\u2019m
+      cool with by the way, it doesn\u2019t bother me)"
+    _image: {fileID: 0}
+  - _content: "But if you don\u2019t wanna, y\u2019know, die more, I\u2019ve got
+      some advice."
+    _image: {fileID: 0}
+  - _content: "For starters, ummm you\u2019re cursed?"
+    _image: {fileID: 0}
+  - _content: "I\u2019ve seen this before with some folks. They get the powers of
+      the curse but they keep their free will. It\u2019s like a glitch in the magic
+      or something. "
+    _image: {fileID: 0}
+  - _content: The catch is you can only use the magic while you're in the underground.
+      Closer to the magic radio waves or something ...
+    _image: {fileID: 0}
+  - _content: "Anyway, the name\u2019s Tippy. Just talk to me if you ever need more
+      uhhh advice."
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}

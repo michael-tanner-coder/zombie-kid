@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ea26e92beb1c644b5efbabf99569dd, type: 3}
+  m_Name: RockBlock
+  m_EditorClassIdentifier: 
+  _name: Rock Block
+  _description: Okay, what if I just turn you into a rock? What then??
+  _baseFiringRate: 5
+  _baseDamage: 0
+  _baseAmmoUsage: 0
+  _baseBulletCount: 1
+  _effect: {fileID: 11400000, guid: ccbb22016ac65c74bbd00fcc6b29e7ae, type: 2}
+  _storeIcon: {fileID: 21300000, guid: f6151126563ede74a946597b21518068, type: 3}
+  _equipIcon: {fileID: 21300000, guid: f6151126563ede74a946597b21518068, type: 3}
+  _firingSound: {fileID: 0}

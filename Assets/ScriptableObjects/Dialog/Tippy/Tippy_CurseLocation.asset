@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: Tippy_CurseLocation
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: Hey dude! You're killing 'em!
+    _image: {fileID: 0}
+  - _content: I mean, they're already dead, but you get me.
+    _image: {fileID: 0}
+  - _content: 'Anyway, got a tip for you: I heard that there''s one of those cursed
+      artifacts somewhere nearby.'
+    _image: {fileID: 0}
+  - _content: 'Those things can be pretty gnarly. They give you extra powers but
+      always at a cost. '
+    _image: {fileID: 0}
+  - _content: I don't mess with them personally, but you seem ... adventurous. I
+      think you can handle them. For real.
+    _image: {fileID: 0}
+  - _content: Alright man, that's all I got for now. Keep it going, dude. You got
+      this.
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}

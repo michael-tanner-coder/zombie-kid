@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3e7e83122307146a2da814e57e160d, type: 3}
+  m_Name: Freeze
+  m_EditorClassIdentifier: 
+  _name: Freeze
+  _description: "Turns enemies into a block that can be pushed into more enemies.
+    \nBounces off walls but can be broken in two shots."
+  _type: 0
+  _icon: {fileID: 21300000, guid: d76809d02b7ec3f4a95f1a9945163ff0, type: 3}
+  _activationSound: {fileID: 0}

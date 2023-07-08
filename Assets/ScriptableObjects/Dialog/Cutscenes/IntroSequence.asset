@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: IntroSequence
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: 'Deep in the forbidden woods, there lays a graveyard for fools. '
+    _image: {fileID: 21300000, guid: a11557881f467204c84028a1e7e0920e, type: 3}
+  - _content: "\u201CFools\u2019 Cemetery\u201D, as the locals call it."
+    _image: {fileID: 21300000, guid: c8a3ae4f4f60915459e5a447bcc4c205, type: 3}
+  - _content: 'A legend says there are two things buried in this cemetery: '
+    _image: {fileID: 0}
+  - _content: 'mountains of rich, glimmering gold, '
+    _image: {fileID: 21300000, guid: e546bd295b62639499b78675644e48d1, type: 3}
+  - _content: and the fools who tried to steal it.
+    _image: {fileID: 0}
+  - _content: Guarded by an army of ghouls, skeletons, and twisted creatures, the
+      treasure remained untouched.
+    _image: {fileID: 0}
+  - _content: That is until one day when a new fool arrived. One who was, like all
+      the others, dumb enough to try.
+    _image: {fileID: 21300000, guid: 54fcd66f1dc8ee2449a07e3268367662, type: 3}
+  - _content: 'But unlike the others, he may have been just dumb enough to succeed. '
+    _image: {fileID: 21300000, guid: 942a17d9754964040a18f7278ea8724c, type: 3}
+  - _content: "This fool\u2019s name \u2026 is Rico."
+    _image: {fileID: 21300000, guid: 942a17d9754964040a18f7278ea8724c, type: 3}
+  _onDialogEnd: {fileID: 11400000, guid: 98877cac4ce1ffd48b5bfa15b50b3bdc, type: 2}

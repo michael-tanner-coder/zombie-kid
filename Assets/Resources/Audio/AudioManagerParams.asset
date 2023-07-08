@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fead6953ffd2f04b8e3c88ee1a04043, type: 3}
+  m_Name: AudioManagerParams
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  masterGroup: {fileID: 24300002, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  sfxGroup: {fileID: -4277074891955562761, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  musicGroup: {fileID: -8598886053118577034, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  snapShots:
+  - {fileID: 24500006, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  - {fileID: 6844079630540778751, guid: 1b5384a8d8364834fa5d3ebfc448db96, type: 2}
+  soundDictionary:
+    m_keys:
+    - PlayerShoot
+    - Score
+    - ComboBreak
+    - Pickup
+    - BonusPoints
+    - GameOver
+    - SwitchWeapon
+    - Interact
+    - Text
+    - Footstep
+    - Hit
+    m_values:
+    - {fileID: 11400000, guid: 2235b4818cfa234469793d2d9ae030cd, type: 2}
+    - {fileID: 11400000, guid: 45fd6e348b2c6d04ea2507f755e224fc, type: 2}
+    - {fileID: 11400000, guid: 4e49115fdc74b0d4d892eee2615a608d, type: 2}
+    - {fileID: 11400000, guid: d8ea3c82cc9ddf44c9b18454986b502f, type: 2}
+    - {fileID: 11400000, guid: cc2a1583c7e6780499c4c812a67ed033, type: 2}
+    - {fileID: 11400000, guid: 6cb23edf4d8a9d04dbbc25e6a99f12ac, type: 2}
+    - {fileID: 11400000, guid: 480b8abdc5375de45ab64432ea177ca3, type: 2}
+    - {fileID: 11400000, guid: 6b04a6460ea0cf841a381c6a212d8127, type: 2}
+    - {fileID: 11400000, guid: 2abebc47c61d0b848b64bd10003cb17c, type: 2}
+    - {fileID: 11400000, guid: 77452957fea36ec4398f5d174896da9b, type: 2}
+    - {fileID: 11400000, guid: edaf99ef899a32c4c8e1dc1a073dd744, type: 2}
+  musicDictionary:
+    m_keys:
+    - Combat
+    - GameOver
+    - Intro
+    - MainMenu
+    - Graveyard
+    m_values:
+    - {fileID: 11400000, guid: 7ff71c7d7e8579d49b89591f85789687, type: 2}
+    - {fileID: 11400000, guid: ea2beba9e12d4724db0a982385498bc9, type: 2}
+    - {fileID: 11400000, guid: c0fa666f6dc0fac459fd561e6500a36a, type: 2}
+    - {fileID: 11400000, guid: b0324e6490cc7814a9bba7107bd2f801, type: 2}
+    - {fileID: 11400000, guid: b7ad1d912deccd8469a3913b104eedd5, type: 2}

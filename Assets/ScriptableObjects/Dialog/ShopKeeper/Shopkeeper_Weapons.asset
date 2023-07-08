@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f7e853beb301d4c8fc63f58bee40a2, type: 3}
+  m_Name: Shopkeeper_Weapons
+  m_EditorClassIdentifier: 
+  lines:
+  - _content: Howdy stranger.
+    _image: {fileID: 0}
+  - _content: "If ya need more energy for yer attacks, come talk to me. I got lil
+      packets of cursed power that\u2019ll put the fightin\u2019 spirit right back
+      in ya. "
+    _image: {fileID: 0}
+  - _content: "For a price, of course. Gotta feed the kids, y\u2019hear?"
+    _image: {fileID: 0}
+  - _content: "All that said \u2018n done, whatcha need?"
+    _image: {fileID: 0}
+  _onDialogEnd: {fileID: 0}
