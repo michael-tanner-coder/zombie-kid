@@ -17,9 +17,6 @@ public class GroupController : MonoBehaviour
     [SerializeField] private GroupState _state = GroupState.IDLE;
     [SerializeField] private GameObjectCollection _opposingGroups;
     [SerializeField] private CircleCollider2D _collider;
-    [SerializeField] private bool _canGainUnits = false;
-    [SerializeField] private float _timeUntilConsumption = 1f;
-    private float _consumptionTimer = 0f;
 
     void Awake()
     {
@@ -31,7 +28,6 @@ public class GroupController : MonoBehaviour
         if (_opposingGroups.Contains(collision.gameObject))
         {
             Debug.Log("Other group entered range");
-            _consumptionTimer = 0f;
 
             Group otherGroup = collision.gameObject.GetComponent<Group>();
             
@@ -47,35 +43,6 @@ public class GroupController : MonoBehaviour
                 _state = GroupState.FLEE;
 
             }
-
-
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (_opposingGroups.Contains(collision.gameObject))
-        {
-            _consumptionTimer = 0f;
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (_opposingGroups.Contains(collision.gameObject))
-        {
-            _consumptionTimer = 0f;
-        }
-    }
-
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        _consumptionTimer += Time.deltaTime;
-        if (_opposingGroups.Contains(collision.gameObject) && _consumptionTimer >= _timeUntilConsumption)
-        {
-            _consumptionTimer = 0f;
-            Group otherGroup = collision.gameObject.GetComponent<Group>();
-            _group.Consume(otherGroup);
         }
     }
 

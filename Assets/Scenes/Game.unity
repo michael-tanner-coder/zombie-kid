@@ -282,6 +282,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4803720865090252251, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803720865090252251, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: _canGainUnits
       value: 1
       objectReference: {fileID: 0}
@@ -318,8 +322,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959859321049023901, guid: 1b20198c14298fb45b3761902ae19f7e, type: 3}
     - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: _opposingGroups
+      value: 
+      objectReference: {fileID: 11400000, guid: ff11018c6958365408a2d16f7d94eacb, type: 2}
+    - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: _canConsumeUnits
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: _timeUntilConsumption
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}

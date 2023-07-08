@@ -3,8 +3,6 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: create enemy groups (leader determines behavior)
-    // TODO: create a detection radius for enemy groups
     // TODO: code flee behavior
     // TODO: code chase behavior
     // TODO: create game over state (0 zombies)
