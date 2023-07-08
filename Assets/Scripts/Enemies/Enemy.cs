@@ -6,12 +6,9 @@ using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private EnemyAttributes _parameters;
-    public EnemyAttributes EnemyAttributes => _parameters;
-    [SerializeField] private EnemyHealth _health;
-    [SerializeField] private FollowerMovement _movement;
+    [SerializeField] private EnemyAttributes _attributes;
+    public EnemyAttributes EnemyAttributes => _attributes;
     [SerializeField] private SpriteRenderer _renderer;
-    [SerializeField] private CustomCollider _hurtBox;
     [SerializeField] private Animator _animator;
     [SerializeField] private SpawnVFX _vfxSpawner;   
     [SerializeField] private GameObjectCollection _collidableObjects;
@@ -25,37 +22,16 @@ public class Enemy : MonoBehaviour
     {
         // get necesssary components
         _renderer = gameObject.GetComponent<SpriteRenderer>();
-        _health = gameObject.GetComponent<EnemyHealth>();
-        _hurtBox = gameObject.GetComponent<CustomCollider>();
         _animator = gameObject.GetComponent<Animator>();
 
-        // apply parameters to individual components
-        SetAttributes(_parameters);
+        // apply attributes to individual components
+        SetAttributes(_attributes);
     }
 
-    void Update()
-    {
-        // time until the enemy can hurt the player
-        _timeUntilLethal -= Time.deltaTime;
-        if (_timeUntilLethal <= 0f)
-        {
-            _lethal = true;
-        }
 
-        // colision checks for projectile damage
-        _hurtBox.RunCollisionChecks();
-        if (_hurtBox.ColDown || _hurtBox.ColUp || _hurtBox.ColLeft || _hurtBox.ColRight)
-        {
-            _health.OnHit(_hurtBox.CurrentHit, 1);
-        }
-    }
-
-    public void SetAttributes(EnemyAttributes parameters)
+    public void SetAttributes(EnemyAttributes attributes)
     {
-        _parameters = parameters;
-        _renderer.sprite = _parameters.AttackAnimation;
-        _health.SetHealth(_parameters.Health.CurrentValue);
-        _animator.runtimeAnimatorController = parameters.Animation;
+        _attributes = attributes;
     }
 
     void OnTriggerEnter2D(Collider2D other) 
