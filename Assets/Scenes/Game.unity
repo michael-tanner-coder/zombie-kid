@@ -243,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534813282178469946, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0002
+      value: 8.0008
       objectReference: {fileID: 0}
     - target: {fileID: 2534813282178469946, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -306,6 +306,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5867dc72610f0ff43b7e2f0286ca1f31, type: 2}
     - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_Name
       value: PlayerGroup
       objectReference: {fileID: 0}
@@ -313,6 +317,10 @@ PrefabInstance:
       propertyPath: _unitPrefab
       value: 
       objectReference: {fileID: 1959859321049023901, guid: 1b20198c14298fb45b3761902ae19f7e, type: 3}
+    - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: _canConsumeUnits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
 --- !u!1 &253633345
@@ -2547,6 +2555,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_Name
       value: CenterEnemyGroup (1)
       objectReference: {fileID: 0}
@@ -2612,7 +2624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534813282178469946, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0001001
+      value: 2.0002
       objectReference: {fileID: 0}
     - target: {fileID: 2534813282178469946, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2658,6 +2670,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6662321636580940025, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_Radius
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: m_Name
       value: CenterEnemyGroup

@@ -26,6 +26,32 @@ public class GroupController : MonoBehaviour
         _collider.radius = _group.Formation.Radius;
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_opposingGroups.Contains(collision.gameObject))
+        {
+            Debug.Log("Other group entered range");
+            _consumptionTimer = 0f;
+
+            Group otherGroup = collision.gameObject.GetComponent<Group>();
+            
+            if (otherGroup.Formation.Amount < _group.Formation.Amount)
+            {
+                Debug.Log("Chasing group");
+                _state = GroupState.CHASE;
+            }
+            
+            if (otherGroup.Formation.Amount > _group.Formation.Amount)
+            {
+                Debug.Log("Fleeing group");
+                _state = GroupState.FLEE;
+
+            }
+
+
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (_opposingGroups.Contains(collision.gameObject))
@@ -49,7 +75,7 @@ public class GroupController : MonoBehaviour
         {
             _consumptionTimer = 0f;
             Group otherGroup = collision.gameObject.GetComponent<Group>();
-            Consume(otherGroup);
+            _group.Consume(otherGroup);
         }
     }
 
@@ -63,36 +89,19 @@ public class GroupController : MonoBehaviour
 
     }
 
-    void Consume(Group otherGroup)
-    {
-        int theirAmount = otherGroup.Formation.Amount;
-        int ourAmount = _group.Formation.Amount;
-
-        if (ourAmount > theirAmount && _canGainUnits) 
-        {
-            ourAmount += 1;
-        }
-
-        if (ourAmount < theirAmount)
-        {
-            ourAmount -= 1;
-        }
-
-        otherGroup.Formation.SetAmount(theirAmount);
-        _group.Formation.SetAmount(ourAmount);
-
-        int newRingAmount = (int) Mathf.Floor((float) _group.Formation.Amount / 10f);
-        newRingAmount = Mathf.Clamp(newRingAmount, 1, 10);
-        _group.Formation.SetRings(newRingAmount);
-
-        if (ourAmount <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     void Update()
     {
-        // check distance of other groups
+        switch (_state)
+        {
+            case GroupState.FLEE:
+                Flee();
+                break;
+            case GroupState.CHASE:
+                Chase();
+                break;
+            case GroupState.IDLE:
+            default:
+                break;
+        }
     }
 }

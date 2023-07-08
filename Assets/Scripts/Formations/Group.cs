@@ -23,6 +23,8 @@ public class Group : MonoBehaviour {
     private List<Vector3> _points = new List<Vector3>();
     [SerializeField] private Transform _leader;
 
+    [SerializeField] private bool _canConsumeUnits = false;
+
     private void Update() 
     {
         SetFormation();
@@ -64,6 +66,34 @@ public class Group : MonoBehaviour {
             var unit = _spawnedUnits.Last();
             _spawnedUnits.Remove(unit);
             Destroy(unit.gameObject);
+        }
+    }
+
+    public void Consume(Group otherGroup)
+    {
+        int theirAmount = otherGroup.Formation.Amount;
+        int ourAmount = Formation.Amount;
+
+        if (ourAmount > theirAmount && _canConsumeUnits) 
+        {
+            ourAmount += 1;
+        }
+
+        if (ourAmount < theirAmount)
+        {
+            ourAmount -= 1;
+        }
+
+        otherGroup.Formation.SetAmount(theirAmount);
+        Formation.SetAmount(ourAmount);
+
+        int newRingAmount = (int) Mathf.Floor((float) Formation.Amount / 10f);
+        newRingAmount = Mathf.Clamp(newRingAmount, 1, 10);
+        Formation.SetRings(newRingAmount);
+
+        if (ourAmount <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
