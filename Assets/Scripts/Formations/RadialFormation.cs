@@ -12,6 +12,7 @@ public class RadialFormation : FormationBase {
     [SerializeField] private float _radiusGrowthMultiplier = 0;
     [SerializeField] private float _rotations = 1;
     [SerializeField] private int _rings = 1;
+    public int Rings => _rings;
     [SerializeField] private float _ringOffset = 1;
     [SerializeField] private float _nthOffset = 0;
 
@@ -24,6 +25,11 @@ public class RadialFormation : FormationBase {
     public void SetRadius (float radius)
     {
         _radius = radius;
+    }
+  
+    public void SetRings (int rings)
+    {
+        _rings = rings;
     }
 
     public override IEnumerable<Vector3> EvaluatePoints() {
