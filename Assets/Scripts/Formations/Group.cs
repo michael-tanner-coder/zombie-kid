@@ -20,7 +20,9 @@ public class Group : MonoBehaviour {
 
     [Header("Units")]
     [SerializeField] private GameObject _unitPrefab;
+    public GameObject UnitPrefab => _unitPrefab;
     [SerializeField] private float _unitSpeed = 2;
+    public float UnitSpeed => _unitSpeed;
 
     private readonly List<GameObject> _spawnedUnits = new List<GameObject>();
     private List<Vector3> _points = new List<Vector3>();
