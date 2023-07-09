@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - SpawnTrigger
   - Door
+  - Human
+  - Zombie
   layers:
   - Default
   - TransparentFX
