@@ -87,7 +87,25 @@ public class Group : MonoBehaviour {
     {
         foreach (var pos in points) 
         {
-            var unit = Instantiate(_unitPrefab, transform.position + pos, Quaternion.identity, transform);
+            ObjectPooler pooler = gameObject.GetComponent<ObjectPooler>();
+            GameObject unit = null;
+
+            if (pooler != null)
+            {
+                Debug.Log("Spawning pooled object");
+                GameObject obj = pooler.GetPooledObject();
+                if (obj == null) return;
+                obj.transform.position = transform.position + pos;
+                obj.transform.rotation = Quaternion.identity;
+                obj.transform.parent = transform;
+                obj.SetActive(true);
+                unit = obj;
+            }
+            else 
+            {
+                unit = Instantiate(_unitPrefab, transform.position + pos, Quaternion.identity, transform);
+            }
+
             _spawnedUnits.Add(unit);
         }
     }
@@ -98,7 +116,15 @@ public class Group : MonoBehaviour {
         {
             var unit = _spawnedUnits.Last();
             _spawnedUnits.Remove(unit);
-            Destroy(unit.gameObject);
+            ObjectPooler pooler = gameObject.GetComponent<ObjectPooler>();
+            if (pooler != null)
+            {
+                unit.SetActive(false);
+            }
+            else 
+            {
+                Destroy(unit.gameObject);
+            }
         }
     }
     #endregion
