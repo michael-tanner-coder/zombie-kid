@@ -122,6 +122,23 @@ public class Group : MonoBehaviour {
         SetFormationRings();
     }
 
+    public void Merge(Group otherGroup)
+    {
+        int theirAmount = otherGroup.Formation.Amount;
+        int ourAmount = Formation.Amount;
+
+        if (ourAmount > theirAmount) 
+        {
+            ourAmount += theirAmount;
+            theirAmount = 0;
+        }
+
+        Formation.SetAmount(ourAmount);
+        otherGroup.Formation.SetAmount(theirAmount);
+        
+        SetFormationRings();
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (_opposingGroups.Contains(collision.gameObject))
