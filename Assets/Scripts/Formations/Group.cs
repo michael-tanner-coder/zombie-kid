@@ -29,6 +29,8 @@ public class Group : MonoBehaviour {
 
     [Header("Targets")]
     [SerializeField] private Transform _leader;
+    public string friendTag = "";
+    public string foeTag = "";
     [SerializeField] private GameObjectCollection _opposingGroups;
 
     [Header("Consumption")]
