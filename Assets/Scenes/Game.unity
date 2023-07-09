@@ -702,7 +702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &692146046
 Transform:
   m_ObjectHideFlags: 0
@@ -3155,6 +3155,20 @@ MonoBehaviour:
   _collider: {fileID: 1758921706}
   _moveClamp: 6
   _deAcceleration: 60
+--- !u!114 &1758921709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758921697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f287790b8a12446b500f68a632cee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainCamera: {fileID: 667373274424784200}
+  _cursorPrefab: {fileID: 8052964720128919480, guid: 036fd975bcf4b634aa9fa7b17956fe88, type: 3}
 --- !u!1 &1803054870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1606937870534627003, guid: 2f7cdc760d175f348b5c7e66524a39a3, type: 3}
@@ -3200,7 +3214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1814941713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8156,6 +8170,11 @@ MonoBehaviour:
   _trackingSpeed: 0.08
   _offsetX: 0
   _offsetY: 2.5
+--- !u!20 &667373274424784200 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 859277144467758652, guid: 0772af49464587347becba7a2d6e1455, type: 3}
+  m_PrefabInstance: {fileID: 1893775264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1606937871219859885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8376,9 +8395,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1947569988740947059, guid: 3ca569e7408e6f141aaf409d7a843a8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1947569989275935301, guid: 3ca569e7408e6f141aaf409d7a843a8e, type: 3}
       propertyPath: _label
-      value: 'GOLD:'
+      value: 'FRIENDS:'
       objectReference: {fileID: 0}
     - target: {fileID: 1947569989275935301, guid: 3ca569e7408e6f141aaf409d7a843a8e, type: 3}
       propertyPath: _useInt
@@ -8446,7 +8469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947569989850942967, guid: 3ca569e7408e6f141aaf409d7a843a8e, type: 3}
       propertyPath: _label
-      value: 'GOLD:'
+      value: 'FRIENDS:'
       objectReference: {fileID: 0}
     - target: {fileID: 1947569989850942967, guid: 3ca569e7408e6f141aaf409d7a843a8e, type: 3}
       propertyPath: _useInt

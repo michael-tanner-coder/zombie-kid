@@ -3,7 +3,6 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: set up input bindings
     // TODO: get aim direction from mouse input
     // TODO: send out zombie with left click (lose a number in your group, spawn a smaller group composed of one zombie)
     // TODO: recall zombie with right click (spawn a call radius prefab, slowly increase size over time, recall zombie when in radius)

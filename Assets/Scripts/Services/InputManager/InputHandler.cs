@@ -58,6 +58,16 @@ public class InputHandler : MonoBehaviour
         return _inputs.Player.Exit;
     }
 
+    public InputAction Send()
+    {
+        return _inputs.Player.Send;
+    }
+
+    public InputAction Recall()
+    {
+        return _inputs.Player.Recall;
+    }
+
     public InputAction FindAction(string actionName)
     {
         return _inputs.FindAction(actionName, false);
