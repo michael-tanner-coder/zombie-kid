@@ -33,12 +33,28 @@ public class Group : MonoBehaviour {
     [SerializeField] private bool _canConsumeUnits = false;
     [SerializeField] private float _timeUntilConsumption = 1f;
     private float _consumptionTimer = 0f;
+
+    [Header("Events")]
+    [SerializeField] private GameEvent _onDestroy;
+    
     #endregion
 
     #region Formation Update
+
+    private void Awake()
+    {
+        SetFormationRings();
+    }
+
     private void Update() 
     {
         SetFormation();
+
+        if (Formation.Amount <= 0)
+        {
+            _onDestroy?.Raise();
+            Destroy(gameObject);
+        }
     }
 
     private void SetFormation() 
@@ -99,17 +115,9 @@ public class Group : MonoBehaviour {
             ourAmount -= 1;
         }
 
-        otherGroup.Formation.SetAmount(theirAmount);
         Formation.SetAmount(ourAmount);
 
-        int newRingAmount = (int) Mathf.Floor((float) Formation.Amount / 10f);
-        newRingAmount = Mathf.Clamp(newRingAmount, 1, 10);
-        Formation.SetRings(newRingAmount);
-
-        if (ourAmount <= 0)
-        {
-            Destroy(gameObject);
-        }
+        SetFormationRings();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -137,6 +145,13 @@ public class Group : MonoBehaviour {
             Group otherGroup = collision.gameObject.GetComponent<Group>();
             Consume(otherGroup);
         }
+    }
+
+    public void SetFormationRings()
+    {
+        int newRingAmount = (int) Mathf.Floor((float) Formation.Amount / 10f);
+        newRingAmount = Mathf.Clamp(newRingAmount, 1, 10);
+        Formation.SetRings(newRingAmount);
     }
     #endregion
 }

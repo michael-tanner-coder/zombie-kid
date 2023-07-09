@@ -109,7 +109,8 @@ MonoBehaviour:
   _leader: {fileID: 2534813282178469946}
   _opposingGroups: {fileID: 11400000, guid: 5867dc72610f0ff43b7e2f0286ca1f31, type: 2}
   _canConsumeUnits: 0
-  _timeUntilConsumption: 1
+  _timeUntilConsumption: 0.4
+  _onDestroy: {fileID: 0}
 --- !u!114 &4803720865090252251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +127,7 @@ MonoBehaviour:
   _state: 3
   _opposingGroups: {fileID: 11400000, guid: 5867dc72610f0ff43b7e2f0286ca1f31, type: 2}
   _collider: {fileID: 5916274324602143627}
+  _moveSpeed: 0.5
 --- !u!114 &7599023085412991480
 MonoBehaviour:
   m_ObjectHideFlags: 0
