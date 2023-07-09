@@ -143,7 +143,7 @@ public class Group : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (_opposingGroups.Contains(collision.gameObject))
+        if (collision.gameObject.tag == foeTag)
         {
             _consumptionTimer = 0f;
         }
@@ -151,7 +151,7 @@ public class Group : MonoBehaviour {
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (_opposingGroups.Contains(collision.gameObject))
+        if (collision.gameObject.tag == foeTag)
         {
             _consumptionTimer = 0f;
         }
@@ -159,11 +159,14 @@ public class Group : MonoBehaviour {
 
     void OnCollisionStay2D(Collision2D collision)
     {
+        Group otherGroup = collision.gameObject.GetComponent<Group>();
+        GroupController otherGroupAIController = collision.gameObject.GetComponent<GroupController>();
+        
+        // gradually consume an enemy group
         _consumptionTimer += Time.deltaTime;
-        if (_opposingGroups.Contains(collision.gameObject) && _consumptionTimer >= _timeUntilConsumption)
+        if (otherGroup != null && collision.gameObject.tag == foeTag && _consumptionTimer >= _timeUntilConsumption)
         {
             _consumptionTimer = 0f;
-            Group otherGroup = collision.gameObject.GetComponent<Group>();
             Consume(otherGroup);
         }
 
