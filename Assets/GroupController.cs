@@ -15,10 +15,10 @@ public class GroupController : MonoBehaviour
 {
     [SerializeField] private Group _group;
     [SerializeField] private GroupState _state = GroupState.IDLE;
-    [SerializeField] private GameObjectCollection _opposingGroups;
+    public GroupState State => _state;
     [SerializeField] private CircleCollider2D _collider;
     [SerializeField] private float _moveSpeed = 0.5f;
-    private GameObject _target;
+    public GameObject target;
 
     void Awake()
     {
@@ -27,46 +27,57 @@ public class GroupController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_opposingGroups.Contains(collision.gameObject))
+        if (_state == GroupState.FOLLOW) 
+        {
+            return;
+        }
+        
+        if (collision.gameObject.tag == _group.foeTag)
         {
             Group otherGroup = collision.gameObject.GetComponent<Group>();
+
             
             if (otherGroup.Formation.Amount < _group.Formation.Amount)
             {
                 _state = GroupState.CHASE;
-                _target = collision.gameObject;
+                target = collision.gameObject;
             }
             
             if (otherGroup.Formation.Amount > _group.Formation.Amount)
             {
                 _state = GroupState.FLEE;
-                _target = collision.gameObject;
+                target = collision.gameObject;
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (_opposingGroups.Contains(collision.gameObject) && _state == GroupState.FLEE)
+        if (collision.gameObject.tag == _group.foeTag && _state == GroupState.FLEE)
         {
             _state = GroupState.IDLE;
         }
     }
 
+    public void SetState(GroupState state)
+    {
+        _state = state;
+    }
+
     void Chase()
     {
-        if (_target != null)
+        if (target != null)
         {
-            Vector2 dir = _target.transform.position - transform.position;
+            Vector2 dir = target.transform.position - transform.position;
             transform.Translate(dir * _moveSpeed * Time.deltaTime);
         }
     }
 
     void Flee()
     {
-        if (_target != null)
+        if (target != null)
         {
-            Vector2 dir = transform.position - _target.transform.position;
+            Vector2 dir = transform.position - target.transform.position;
             transform.Translate(dir * _moveSpeed * Time.deltaTime);
         }
     }
@@ -79,6 +90,7 @@ public class GroupController : MonoBehaviour
                 Flee();
                 break;
             case GroupState.CHASE:
+            case GroupState.FOLLOW:
                 Chase();
                 break;
             case GroupState.IDLE:
