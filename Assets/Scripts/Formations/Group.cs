@@ -156,4 +156,17 @@ public class Group : MonoBehaviour {
         Formation.SetRings(newRingAmount);
     }
     #endregion
+
+    #region Tag Setters
+    public void SetFriend(string friend)
+    {
+      friendTag = friend;
+      gameObject.tag = friendTag;
+    }
+
+    public void SetFoe(string foe)
+    {
+        foeTag = foe;
+    }
+    #endregion
 }
