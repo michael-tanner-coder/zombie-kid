@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6662321636580940025}
   m_Layer: 0
   m_Name: Group
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,8 @@ MonoBehaviour:
   _unitPrefab: {fileID: 8724373994609232352, guid: aafac9a21def72041af4dfce54d2c58f, type: 3}
   _unitSpeed: 4
   _leader: {fileID: 2534813282178469946}
+  friendTag: Human
+  foeTag: Zombie
   _opposingGroups: {fileID: 11400000, guid: 5867dc72610f0ff43b7e2f0286ca1f31, type: 2}
   _canConsumeUnits: 0
   _timeUntilConsumption: 0.4

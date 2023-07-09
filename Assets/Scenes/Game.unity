@@ -431,9 +431,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerGroup
       objectReference: {fileID: 0}
+    - target: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: m_TagString
+      value: Zombie
+      objectReference: {fileID: 0}
     - target: {fileID: 8151276938307047959, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: _amount
-      value: 9
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: foeTag
+      value: Human
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+      propertyPath: friendTag
+      value: Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 8151276938307047960, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
       propertyPath: _onDestroy
@@ -3169,6 +3181,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 667373274424784200}
   _cursorPrefab: {fileID: 8052964720128919480, guid: 036fd975bcf4b634aa9fa7b17956fe88, type: 3}
+  _groupPrefab: {fileID: 8022414983740873311, guid: 54ed052a2120e6f42aa4338247155f5d, type: 3}
+  _whistleRadiusPrefab: {fileID: 6268670389987946624, guid: d043a91300764a5438372a98e1be6c1b, type: 3}
+  _waypointPrefab: {fileID: 0}
+--- !u!114 &1758921710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758921697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b02d4e86d8cf5e45bae1d6f8c0100bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1959859321049023901, guid: 1b20198c14298fb45b3761902ae19f7e, type: 3}
+  pooledAmount: 100
+  willGrow: 1
 --- !u!1 &1803054870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1606937870534627003, guid: 2f7cdc760d175f348b5c7e66524a39a3, type: 3}
@@ -3214,7 +3244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1814941713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,7 +3668,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3a72aed3f9bd15047886295baa23c14d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
