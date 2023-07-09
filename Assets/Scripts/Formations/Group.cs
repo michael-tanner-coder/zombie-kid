@@ -166,6 +166,12 @@ public class Group : MonoBehaviour {
             Group otherGroup = collision.gameObject.GetComponent<Group>();
             Consume(otherGroup);
         }
+
+        // immediately merge with a friendly following group
+        if (otherGroupAIController != null && otherGroupAIController.State == GroupState.FOLLOW && collision.gameObject.tag == friendTag)
+        {
+            Merge(otherGroup);
+        } 
     }
 
     public void SetFormationRings()
