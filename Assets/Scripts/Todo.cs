@@ -3,11 +3,6 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // CORE GAMEPLAY:
-    // TODO: code flee behavior
-    // TODO: code chase behavior
-    // TODO: create game over state (0 zombies)
-    // TODO: retry button (reset game state)
-    // TODO: create enemy spawner (bigger groups over time, more frequent spawns, spawn far away out of camera bounds)
     // TODO: set up input bindings
     // TODO: get aim direction from mouse input
     // TODO: send out zombie with left click (lose a number in your group, spawn a smaller group composed of one zombie)
