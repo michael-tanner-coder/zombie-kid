@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class Todo : MonoBehaviour
 {
-    // GRAPHICS:
-    // TODO: code camera behavior / parameters
-    // TODO: create background (desert)
-    // TODO: cutscene graphics/writing
-
     // SOUND: 
     // TODO: movement sound
     // TODO: send sound
