@@ -3,11 +3,8 @@ using UnityEngine;
 public class Todo : MonoBehaviour
 {
     // GRAPHICS:
-    // TODO: pick target resolution
-    // TODO: pick color palette
     // TODO: code camera behavior / parameters
-    // TODO: create sprites for player, zombies, and three enemy types, capture bubble, bubble shot
-    // TODO: create background (abstract? city scape???)
+    // TODO: create background (desert)
     // TODO: cutscene graphics/writing
 
     // SOUND: 
@@ -28,4 +25,8 @@ public class Todo : MonoBehaviour
     // TODO: HUD
     // TODO: options
     // TODO: cutscene UI
+
+    // POLISH:
+    // TODO: tune AI
+    // TODO: adjust hitboxes for circle colliders
 }
