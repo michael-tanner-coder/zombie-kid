@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7821706709f7c9b44957bf27598e8759
+guid: 7ae8cc3f32393ea49bfcf0b0a04ef6d4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-shoot_0
+      name: zombie-kid-run-up_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 10
-        height: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d168f0694c9871b4fa4b567fc1201c4e
-      internalID: 618586786
+      spriteID: df4f8c5da0877a84099a9a97a00abb4b
+      internalID: 135800177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-shoot_1
+      name: zombie-kid-run-up_1
       rect:
         serializedVersion: 2
-        x: 10
+        x: 16
         y: 0
-        width: 10
-        height: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63d3615d8e2168644a11b1332afcff46
-      internalID: 449214992
+      spriteID: a418ee70b08a4e74191371438be883fd
+      internalID: -1829265300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-shoot_2
+      name: zombie-kid-run-up_2
       rect:
         serializedVersion: 2
-        x: 20
+        x: 32
         y: 0
-        width: 10
-        height: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93622128211eb8a4d9078c1415155020
-      internalID: 2022627407
+      spriteID: b5a0c7e36b67b5c4e8c4a28c2bba34eb
+      internalID: 2042855661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-shoot_3
+      name: zombie-kid-run-up_3
       rect:
         serializedVersion: 2
-        x: 30
+        x: 48
         y: 0
-        width: 10
-        height: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce7aff46f9d23a448015f4566d0aee5
-      internalID: -1082389612
+      spriteID: bdf5a271eb146e14aa65bb7b59648d1e
+      internalID: -1701253170
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player-shoot_0: 618586786
-      player-shoot_1: 449214992
-      player-shoot_2: 2022627407
-      player-shoot_3: -1082389612
+      zombie-kid-run-up_0: 135800177
+      zombie-kid-run-up_1: -1829265300
+      zombie-kid-run-up_2: 2042855661
+      zombie-kid-run-up_3: -1701253170
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
