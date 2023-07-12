@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d29808ec8c131fa40a1b32272bc6a7fc, type: 3}
   m_Name: CombatMusic
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 7600ce9e944979a48a915878cb52a52f, type: 3}
+  clip: {fileID: 8300000, guid: e7ab235a7468fa646a731f0a73d21006, type: 3}
   loop: 1
   volume: 1
   pitch: 1

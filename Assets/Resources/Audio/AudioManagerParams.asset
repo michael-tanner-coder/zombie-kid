@@ -51,9 +51,11 @@ MonoBehaviour:
     - Intro
     - MainMenu
     - Graveyard
+    - Outro
     m_values:
     - {fileID: 11400000, guid: 7ff71c7d7e8579d49b89591f85789687, type: 2}
     - {fileID: 11400000, guid: ea2beba9e12d4724db0a982385498bc9, type: 2}
     - {fileID: 11400000, guid: c0fa666f6dc0fac459fd561e6500a36a, type: 2}
     - {fileID: 11400000, guid: b0324e6490cc7814a9bba7107bd2f801, type: 2}
     - {fileID: 11400000, guid: b7ad1d912deccd8469a3913b104eedd5, type: 2}
+    - {fileID: 11400000, guid: f4ddd33778beb1f4f8650268213072dc, type: 2}

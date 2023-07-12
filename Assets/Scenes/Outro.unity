@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f5c49a3ac9cb54bae8f8ad5d85f89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingSong: MainMenu
+  _startingSong: Outro
 --- !u!4 &120658035
 Transform:
   m_ObjectHideFlags: 0
