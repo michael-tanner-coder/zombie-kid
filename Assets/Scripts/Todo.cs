@@ -8,10 +8,7 @@ public class Todo : MonoBehaviour
     // TODO: recall sound
     // TODO: hug sound
     // TODO: lose zombie sound
-    // TODO: shoot sound
-    // TODO: shoot sound
     // TODO: combat music
-    // TODO: menu music
     // TODO: intro/outro music
 
     // UI:
