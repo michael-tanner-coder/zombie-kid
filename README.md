@@ -1,10 +1,12 @@
 # ZOMBIE KID!
 This was a quick little game originally made for the GMTK 2023 jam, but due to scheduling issues, I couldn't find time to compete in the jam proper, so it's here as a late release. 
 
+The theme of the jam was "roles reversed", so I decided on a silly game where you play the role of a zombie. But instead of trying to eat or infect people, he just wants friends lol
+
 The repo is based off the risky-rico repo I recently built with HomeTeamGameDev, so it shares a lot of cruft code with it (slowly removing that though)
 
 # PREMISE
-Zombie Kid is about building up an army of friends by giving everyone cute zombie hugs. 
+Zombie Kid is about a lonely little zombie who wants to build up an army of friends by giving everyone cute zombie hugs. 
 
 Walk up to a person and make them your friend just by hugging them! The more friends you get, the bigger your group will be. 
 
