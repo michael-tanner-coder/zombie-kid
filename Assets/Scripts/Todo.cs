@@ -17,7 +17,6 @@ public class Todo : MonoBehaviour
 
     // UI:
     // TODO: HUD
-    // TODO: cutscene UI
 
     // POLISH:
     // TODO: tune AI
