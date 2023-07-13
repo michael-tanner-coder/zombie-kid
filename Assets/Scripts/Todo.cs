@@ -16,10 +16,7 @@ public class Todo : MonoBehaviour
     // TODO: lose zombie sound
 
     // UI:
-    // TODO: start menu
-    // TODO: game over screen
     // TODO: HUD
-    // TODO: options
     // TODO: cutscene UI
 
     // POLISH:
