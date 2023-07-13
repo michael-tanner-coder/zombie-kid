@@ -25,6 +25,12 @@ public class Cutscene : MonoBehaviour
         _inputHandler.Exit().performed += SkipCutScene;
     }
 
+    void OnDisable()
+    {
+        InputHandler _inputHandler = ServiceLocator.Instance.Get<InputManager>().Inputs();
+        _inputHandler.Exit().performed -= SkipCutScene;
+    }
+
     public void Update()
     {
         // switch the image sprite to the current cutscene image
