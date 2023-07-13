@@ -20,12 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 551a3ed4602d15c419c6eb0469e3179c
-  - enabled: 0
-    path: Assets/Scenes/Graveyard.unity
-    guid: 75fb115a5b200bb4881a8ebd8c6afa94
   - enabled: 1
     path: Assets/Scenes/Outro.unity
-    guid: aa8f0656bebf46548b8051a20fa11490
+    guid: a8eeedf272f7c55479b693e25052029f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: b62952bf1499943b9ba8b36dab3bd886
